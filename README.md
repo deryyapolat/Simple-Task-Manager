@@ -13,5 +13,4 @@ HTML
 CSS
 
 ## Link
-https://github.io/deryyapolat/Simple-Task-Manager/
-
+https://deryyapolat.github.io/Simple-Task-Manager/
