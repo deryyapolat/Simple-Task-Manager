@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Simple Task Manager</h1>
+      <p>Görevlerini ekle, tamamla ve yönet.</p>
+    </header>
+
+    <section class="task-input">
+      <input type="text" id="taskInput" placeholder="Yeni görev yaz..." />
+      <button id="addTaskBtn">Ekle</button>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all">Tümü</button>
+      <button class="filter-btn" data-filter="pending">Bekleyen</button>
+      <button class="filter-btn" data-filter="completed">Tamamlanan</button>
+    </section>
+
+    <section class="task-stats">
+      <span id="totalTasks">Toplam: 0</span>
+      <span id="completedTasks">Tamamlanan: 0</span>
+      <span id="pendingTasks">Bekleyen: 0</span>
+    </section>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <div class="actions">
+      <button id="clearCompletedBtn" class="danger">Tamamlananları Temizle</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
